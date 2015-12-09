@@ -1,0 +1,791 @@
+/*g-sec内容区域公共样式*/
+
+.g-sec {
+    width: 1206px;
+    margin: auto;
+}
+
+.g-mn {
+    width: 980px;
+}
+
+.g-left {
+    float: left;
+}
+
+.g-right {
+    float: right;
+}
+
+
+/*g-sec当屏幕尺寸小于等于1205px，变换为窄屏显示方案*/
+
+@media screen and (max-width:1205px) {
+    .g-sec {
+        width: 960px;
+    }
+    .g-mn {
+        width: 735px;
+    }
+}
+
+
+/*模块-提示条*/
+
+.m-tip {
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #f3f3f3;
+}
+
+.m-tip .g-left a {
+    color: #21a557;
+}
+
+.m-tip #tipClose {
+    cursor: pointer;
+}
+
+
+/*布局-头部*/
+
+.g-hd {
+    min-width: 960px;
+    background-color: #fff;
+}
+
+
+/*模块-头部导航*/
+
+.g-nav {
+    height: 90px;
+    line-height: 90px;
+}
+
+
+/*模块-头部导航-LOGO-网易教育产品部*/
+
+.m-logo h1 {
+    display: inline;
+    font-family: 'Hiragino Sans GB', "Microsoft YaHei", sans-serif;
+    color: #333;
+    font-size: 22px;
+}
+
+
+/*模块-头部导航-LOGO-EDU*/
+
+.m-logo h1 em {
+    font-family: 'Gill Sans MT Bold';
+    color: #39a030;
+    font-size: 28px;
+    vertical-align: -2px;
+}
+
+
+/*模块-头部导航-LOGO-分隔线*/
+
+.m-logo h1 i {
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    margin: 0 10px;
+    vertical-align: -1px;
+    background-color: #39a030;
+}
+
+
+/*模块-头部导航-关注*/
+
+.g-nav .m-fans {
+    line-height: 22px;
+    margin-left: 30px;
+    font-size: 12px;
+    vertical-align: text-bottom;
+}
+
+.g-nav .m-fans img {
+    padding-right: 5px;
+}
+
+
+/*模块-头部导航-关注按钮（登录前）*/
+
+.g-nav .m-fans .u-fol {
+    display: inline-block;
+    width: 54px;
+    height: 21px;
+    border: #fff solid 1px;
+    border-radius: 2px;
+    background-color: #21a557;
+    color: #fff;
+    text-align: center;
+}
+
+.g-nav .m-fans .u-fol:hover {
+    background-color: #2fb556;
+    color: #fff;
+}
+
+
+/*模块-头部导航-关注按钮（登录后）*/
+
+.g-nav .m-fans .u-fed {
+    display: inline-block;
+    width: 106px;
+    height: 21px;
+    border: #ccc solid 1px;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+.g-nav .m-fans .u-fed i {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 6px;
+    background-color: #ccc;
+}
+
+.g-nav .m-fans .u-fed del {
+    color: #999;
+}
+
+.g-nav .m-fans .u-fed:hover {
+    background-color: #fff;
+}
+
+.g-nav .m-fans .u-fed:hover del {
+    color: #21a557;
+    text-decoration: underline;
+}
+
+
+/*模块-头部导航-关注-粉丝数*/
+
+.g-nav .m-fans .u-fnum {
+    color: #666;
+    margin-left: 10px;
+}
+
+
+/*模块-头部导航-网站链接*/
+
+.g-nav .m-menu {
+    line-height: 90px;
+    margin-right: 12px;
+}
+
+.g-nav .m-menu .u-btn {
+    margin: 0 25px;
+    font-family: 'Hiragino Sans GB', "Microsoft YaHei", sans-serif;
+    color: #666;
+    font-size: 16px;
+}
+
+.g-nav .m-menu .u-find {
+    font-family: "iconfont";
+    color: #666;
+    font-size: 19px;
+}
+
+.g-nav .m-menu a:hover {
+    color: #39a030;
+}
+
+
+/*模块-轮播头图*/
+
+.g-tt {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    
+}
+
+.g-tt li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.g-tt a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.g-tt li.z-crt {
+    z-index: 11;
+}
+
+
+/* 模块-轮播头图-多点式幻灯指示控制器-默认底部居中 */
+
+.g-tt .u-pointer {
+    position: absolute;
+    font-size: 0;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    text-align: center;
+    line-height: 0;
+}
+
+.g-tt .u-pointer i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background: #fff;
+}
+
+.g-tt .u-pointer i:hover {
+    background: #999;
+}
+
+.g-tt .u-pointer i.z-crt {
+    background: #333;
+}
+
+
+/*分站点介绍*/
+
+.g-tab {
+    margin-left: -72px;
+    height: 235px;
+}
+
+.g-tab ul {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 60px;
+}
+
+.g-tab .m-class {
+    display: table-cell;   
+    padding-left: 72px;
+}
+
+.g-tab .m-class img {
+    margin-top: 8px;
+    float: left;
+}
+
+.g-tab .m-class .u-des {
+    margin-left: 100px;
+    font-family: 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    font-size: 14px;
+}
+
+.g-tab .m-class .u-des h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.g-tab .m-class .u-des p {
+    color: #666;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.g-tab .m-class .u-des a {
+    color: #39a030;
+}
+
+.g-tab .m-class .u-des a:hover {
+    text-decoration: underline;
+}
+
+
+/*布局-课程主体*/
+
+.g-bd {
+    min-width: 960px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+
+/*模块-工作环境图片展示*/
+
+.g-bd .m-wk {
+    position: relative;
+    height: 303px;
+}
+
+.g-bd .m-wk .u-img {
+    position: absolute;
+    left: 50%;
+    margin-left: -804px;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.g-bd .m-wk img {
+    margin: 2px;
+}
+
+
+/*模块-主栏-切换按钮*/
+
+.g-mn .m-btn {
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px #c8c6c7;
+    width: 400px;
+    height: 50px;
+    font-size: 0px;
+    margin-bottom: 30px;
+}
+
+.g-mn .m-btn label {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    color: #666;
+    font: 20px/50px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    text-align: center;
+}
+
+.g-mn .m-btn .u-rdo:checked + label {
+    background-color: #39a030;
+    color: #fff;
+}
+
+
+/*模块-主栏-课程列表*/
+
+.g-mn .m-lis li {
+    position: relative;
+    display: inline-block;
+    margin-right: 242px;
+    margin-bottom: 245px;
+}
+
+.g-mn .m-lis .u-li {
+    position: absolute;
+    width: 225px;
+    height: 228px;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px 0px #dfdfdf;
+}
+
+.g-mn .m-lis .u-li:hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 481px;
+    height: 238px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0.00px #827e80;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.g-mn .m-lis .u-li img {
+    width: 223px;
+    height: 124px;
+    margin: 1px;
+}
+
+.g-mn .m-lis .u-li:hover img {
+    float: left;
+    margin-right: 20px;
+}
+
+.g-mn .m-lis .u-li .u-des {
+    margin: 0 5px;
+    font: 400 12px/22px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+}
+
+.g-mn .m-lis .u-li:hover .u-des div {
+    color: #666;
+}
+
+.m-lis .u-des .f-name {
+    color: #333;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.g-mn .m-lis .u-li:hover .u-des .f-name {
+    color: #39a030;
+    font-size: 18px;
+    width: 200px;
+    line-height: 28px;
+}
+
+.m-lis .u-des .f-provider {
+    color: #999;
+}
+
+.m-lis .u-li:hover .u-des .f-provider {
+    margin-top: 32px;
+}
+
+.m-lis .u-li:hover .u-des .f-provider:before {
+    content: "发布者：";
+}
+
+.m-lis .u-des .f-category {
+    display: none;
+}
+
+.m-lis .u-li:hover .u-des .f-category {
+    display: block;
+}
+
+.m-lis .u-li:hover .u-des .f-category:before {
+    content: "分类：";
+}
+
+.m-lis .u-des .f-learnerCount {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin: 4px 0;
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #bbb;
+    font-family: "iconfont";
+}
+
+.m-lis .u-des .f-learnerCount:before {
+    content: "\e65b";
+    font-family: "iconfont";
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.m-lis .u-li:hover .u-des .f-learnerCount {
+    float: left;
+    border: none;
+    margin-top: -70px;
+}
+
+.m-lis .u-li:hover .u-des .f-learnerCount:after {
+    content: "人在学";
+}
+
+.m-lis .u-des .f-price {
+    color: #ff3f00;
+}
+
+.m-lis .u-li:hover .u-des .f-price {
+    display: none;
+}
+
+.m-lis .u-des .f-description {
+    display: none;
+}
+
+.m-lis .u-li:hover .u-des .f-description {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 481px;
+    height: 83px;
+    padding: 17px 22px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    overflow: scroll;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/*模块-主栏-页码翻页*/
+
+.g-mn .m-page {
+    height: 20px;
+    margin: 10px 20px 120px 0;
+    text-align: right;
+    font: 14px/20px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+}
+
+.g-mn .m-page a,
+.g-mn .m-page span {
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 0 4px;
+    margin: 0 2px;
+    text-align: center;
+}
+
+.g-mn .m-page a {
+    color: #666;
+}
+
+.g-mn .m-page a:hover {
+    background-color: #9dd8b1;
+    color: #fff;
+}
+
+.g-mn .m-page .z-nex {
+    background-color: #9dd8b1;
+    color: #fff;
+}
+
+.g-mn .m-page .z-dis {
+    color: #39a030;
+    background-color: none;
+    cursor: default;
+}
+
+
+/*模块-边栏*/
+
+.g-sd {
+    width: 223px;
+}
+
+.g-sd h3 {
+    font: 16px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    border-bottom: #ddd solid 1px;
+    padding: 20px;
+}
+
+.g-sd .m-vdo,
+.g-sd .m-top {
+    box-shadow: 0px 1px 1px 0px #c8c6c7;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/*模块-边栏-机构介绍*/
+
+.m-vdo .u-video {
+    padding: 20px;
+    font: 14px/14px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    color: #666;
+}
+
+.m-vdo .u-video img {
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+
+/*模块-边栏-最热排行*/
+
+.m-top ul {
+    overflow: hidden;
+}
+
+.m-top li {
+    height: 50px;
+    margin: 20px;
+}
+
+.m-top li img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 9px;
+}
+
+.m-top .f-name {
+    font: 14px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.m-top .f-learnerCount {
+    height: 14px;
+    line-height: 14px;
+    color: #bbb;
+}
+
+.m-top .f-learnerCount:before {
+    content: "\e65b";
+    font-family: "iconfont";
+    vertical-align: text-bottom;
+    margin-right: 4px;
+}
+
+
+/*布局-尾部*/
+
+.g-ft {
+    width: 100%;
+    min-width: 960px;
+    height: 262px;
+    background-color: #2c3339;
+    color: #bebfc0;
+    font: 12.5px/29px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    overflow: hidden;
+}
+
+.g-ft .g-sec {
+    padding-top: 82px;
+}
+
+.g-ft .m-logo,
+.g-ft ul {
+    float: left;
+}
+
+.g-ft .m-logo {
+    margin-right: 150px;
+}
+
+.g-ft .u-link {
+    margin-right: 80px;
+}
+
+.g-ft .u-us {
+    margin-right: 70px;
+}
+
+.g-ft .m-logo h1 {
+    color: #39a030;
+    line-height: 60px;
+}
+
+.g-ft a {
+    font: 14.6px/29px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    color: #bebfc0;
+}
+
+.g-ft a:hover {
+    text-decoration: underline;
+}
+
+.g-ft a img {
+    vertical-align: text-bottom;
+    margin-left: 10px;
+}
+
+
+/*遮罩*/
+
+.u-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: #000;
+    opacity: 0.8;
+    /*兼容 IE8*/
+    filter: alpha(opacity=80);
+}
+
+
+/*遮罩-登录框*/
+
+.m-login {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -193.5px;
+    margin-top: -144px;
+    width: 387px;
+    height: 288px;
+    z-index: 21;
+    background-color: #fff;
+    font: 16px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.f-Close {
+    float: right;
+    cursor: pointer;
+    margin: 6px 8px 0 0;
+}
+
+.m-login h3 {
+    color: #444;
+    font-size: 18px;
+    padding-top: 28px;
+    padding-bottom: 18px;
+}
+
+.m-login input {
+    width: 295px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    color: #ccc;
+    font: 16px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    padding: 12px;
+}
+
+.m-login button {
+    width: 293px;
+    height: 46px;
+    border: none;
+    font: 16px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+    font-family: 'Microsoft YaHei';
+    color: #fff;
+    letter-spacing: 3.2px;
+}
+
+
+/*遮罩-视频播放*/
+
+.m-video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -475px;
+    margin-top: -338px;
+    width: 950px;
+    height: 676px;
+    z-index: 21;
+    background-color: #fff;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.m-video h3 {
+    color: #444;
+    font: 18px/76px 'Microsoft YaHei', 'Hiragino Sans GB', sans-serif;
+}
+
+
+/*!!!My Easter egg!!!*/
+
+#easterEgg {
+    display: none;
+}
+
+@media screen and (max-width:1205px) {
+    #easterEgg {
+        display: inline-block;
+        position: absolute;
+        width: 225px;
+        height: 228px;
+        background-color: #fff;
+        box-shadow: 0px 1px 1px 0px #dfdfdf;
+    }
+}
